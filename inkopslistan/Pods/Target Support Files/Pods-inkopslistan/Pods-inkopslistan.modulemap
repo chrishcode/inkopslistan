@@ -1,0 +1,6 @@
+framework module Pods_inkopslistan {
+  umbrella header "Pods-inkopslistan-umbrella.h"
+
+  export *
+  module * { export * }
+}
