@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F008DD71C99E8FE00D4733A /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F008DD61C99E8FE00D4733A /* SwipeViewController.swift */; };
+		7F008DDB1C99EC9A00D4733A /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7F008DD81C99EC9A00D4733A /* Montserrat-ExtraBold.otf */; };
+		7F008DDC1C99EC9A00D4733A /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F008DD91C99EC9A00D4733A /* Montserrat-Bold.ttf */; };
+		7F008DDD1C99EC9A00D4733A /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7F008DDA1C99EC9A00D4733A /* Montserrat-Regular.otf */; };
 		7F51E0851C98B10000C8BF44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51E0841C98B10000C8BF44 /* AppDelegate.swift */; };
 		7F51E0871C98B10000C8BF44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51E0861C98B10000C8BF44 /* ViewController.swift */; };
 		7F51E08A1C98B10000C8BF44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F51E0881C98B10000C8BF44 /* Main.storyboard */; };
@@ -18,6 +22,10 @@
 /* Begin PBXFileReference section */
 		2B83788992E01640B63CDAA2 /* Pods-inkopslistan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inkopslistan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-inkopslistan/Pods-inkopslistan.debug.xcconfig"; sourceTree = "<group>"; };
 		6BFA891E51B7E54DD69C5340 /* Pods-inkopslistan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inkopslistan.release.xcconfig"; path = "Pods/Target Support Files/Pods-inkopslistan/Pods-inkopslistan.release.xcconfig"; sourceTree = "<group>"; };
+		7F008DD61C99E8FE00D4733A /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
+		7F008DD81C99EC9A00D4733A /* Montserrat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraBold.otf"; path = "../../../../Library/Fonts/Montserrat-ExtraBold.otf"; sourceTree = "<group>"; };
+		7F008DD91C99EC9A00D4733A /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.ttf"; path = "../../../../Library/Fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		7F008DDA1C99EC9A00D4733A /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.otf"; path = "../../../../Library/Fonts/Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		7F51E0811C98B10000C8BF44 /* inkopslistan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inkopslistan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F51E0841C98B10000C8BF44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F51E0861C98B10000C8BF44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,8 +77,12 @@
 		7F51E0831C98B10000C8BF44 /* inkopslistan */ = {
 			isa = PBXGroup;
 			children = (
+				7F008DD81C99EC9A00D4733A /* Montserrat-ExtraBold.otf */,
+				7F008DD91C99EC9A00D4733A /* Montserrat-Bold.ttf */,
+				7F008DDA1C99EC9A00D4733A /* Montserrat-Regular.otf */,
 				7F51E0841C98B10000C8BF44 /* AppDelegate.swift */,
 				7F51E0861C98B10000C8BF44 /* ViewController.swift */,
+				7F008DD61C99E8FE00D4733A /* SwipeViewController.swift */,
 				7F51E0881C98B10000C8BF44 /* Main.storyboard */,
 				7F51E08B1C98B10000C8BF44 /* Assets.xcassets */,
 				7F51E08D1C98B10000C8BF44 /* LaunchScreen.storyboard */,
@@ -150,9 +162,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F008DDC1C99EC9A00D4733A /* Montserrat-Bold.ttf in Resources */,
+				7F008DDB1C99EC9A00D4733A /* Montserrat-ExtraBold.otf in Resources */,
 				7F51E08F1C98B10000C8BF44 /* LaunchScreen.storyboard in Resources */,
 				7F51E08C1C98B10000C8BF44 /* Assets.xcassets in Resources */,
 				7F51E08A1C98B10000C8BF44 /* Main.storyboard in Resources */,
+				7F008DDD1C99EC9A00D4733A /* Montserrat-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +228,7 @@
 			files = (
 				7F51E0871C98B10000C8BF44 /* ViewController.swift in Sources */,
 				7F51E0851C98B10000C8BF44 /* AppDelegate.swift in Sources */,
+				7F008DD71C99E8FE00D4733A /* SwipeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

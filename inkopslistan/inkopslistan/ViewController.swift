@@ -7,12 +7,13 @@
 //
 
 import UIKit
-import EZSwipeController
-
 
 
 class ViewController: UIViewController {
 
+    @IBAction func buttonClicked(sender: UIButton) {
+        presentViewController(SwipeViewController(), animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
