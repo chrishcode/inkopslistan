@@ -35,6 +35,7 @@
 		<string>Montserrat-ExtraBold.otf</string>
 		<string>Montserrat-Bold.ttf</string>
 		<string>Montserrat-Regular.otf</string>
+		<string>Montserrat-UltraLight.otf</string>
 	</array>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleLightContent</string>

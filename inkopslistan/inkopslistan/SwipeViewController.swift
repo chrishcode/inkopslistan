@@ -37,10 +37,26 @@ extension UIColor {
     }
 }
 
+// Letter spacing
+extension UILabel {
+    func addCharactersSpacing(spacing:CGFloat, text:String) {
+        let attributedString = NSMutableAttributedString(string: text)
+        attributedString.addAttribute(NSKernAttributeName, value: spacing, range: NSMakeRange(0, text.characters.count))
+        self.attributedText = attributedString
+    }
+}
+
 
 func createStartSwipeView() -> UIViewController {
     let view = UIViewController()
     view.view.backgroundColor = UIColor(netHex: 0x218380)
+    
+    let titleLabel = UILabel(frame: CGRectMake(0, 300, view.view.frame.size.width, 50))
+    titleLabel.textAlignment = NSTextAlignment.Center
+    titleLabel.addCharactersSpacing(2, text: "Inköpslistan")
+    titleLabel.textColor = UIColor(netHex: 0xffffff)
+    titleLabel.font = UIFont(name: "Montserrat-UltraLight", size: 35)
+    view.view.addSubview(titleLabel)
     
     // Create the navigation bar
     let navigationBar = UINavigationBar(frame: CGRectMake(0, 0, view.view.frame.size.width, 64)) // Offset by 20 pixels vertically to take the status bar into account
@@ -59,11 +75,13 @@ func createStartSwipeView() -> UIViewController {
     }
     
     navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Montserrat-ExtraBold", size: 26)!, NSForegroundColorAttributeName: UIColor(netHex: 0xffffff)]
-    //            navigationBar.delegate = self;
+    // navigationBar.delegate = self;
     
-    // Create a navigation item with a title
+    // Create a navigation item
     let navigationItem = UINavigationItem()
-//    navigationItem.title = "Matlista \(colorCount)"
+    let plusButton : UIBarButtonItem = UIBarButtonItem(title: "Ny Lista", style: UIBarButtonItemStyle.Plain, target: view, action: "")
+    plusButton.tintColor = UIColor(netHex: 0xffffff)
+    navigationItem.rightBarButtonItem = plusButton
     
     // Assign the navigation item to the navigation bar
     navigationBar.items = [navigationItem]
