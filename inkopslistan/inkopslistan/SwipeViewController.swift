@@ -47,15 +47,16 @@ extension UILabel {
 }
 
 
+// Creates start view
 func createStartSwipeView() -> UIViewController {
     let view = UIViewController()
     view.view.backgroundColor = UIColor(netHex: 0x218380)
     
     let titleLabel = UILabel(frame: CGRectMake(0, 300, view.view.frame.size.width, 50))
     titleLabel.textAlignment = NSTextAlignment.Center
-    titleLabel.addCharactersSpacing(2, text: "Inköpslistan")
+    titleLabel.addCharactersSpacing(3, text: "Inköpslistan")
     titleLabel.textColor = UIColor(netHex: 0xffffff)
-    titleLabel.font = UIFont(name: "Montserrat-UltraLight", size: 35)
+    titleLabel.font = UIFont(name: "Montserrat-UltraLight", size: 30)
     view.view.addSubview(titleLabel)
     
     // Create the navigation bar
